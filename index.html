@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Eligibility for Financial Aid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Check Eligibility for Financial Aid</h2>
+        <p>If you are facing financial challenges, you may be eligible for discounted therapy costs.</p>
+        
+        <form id="eligibilityForm">
+            <div class="form-group">
+                <label>What is your current employment status?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="unemployed" name="employmentStatus" value="Unemployed">
+                    <label for="unemployed">Unemployed</label>
+                    
+                    <input type="checkbox" id="student" name="employmentStatus" value="Student">
+                    <label for="student">Student</label>
+                    
+                    <input type="checkbox" id="partTime" name="employmentStatus" value="Employed part-time">
+                    <label for="partTime">Employed part-time</label>
+                    
+                    <input type="checkbox" id="fullTime" name="employmentStatus" value="Employed full-time">
+                    <label for="fullTime">Employed full-time</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>What is the current employment status of your spouse?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="noSpouse" name="spouseEmployment" value="I don't have a spouse">
+                    <label for="noSpouse">I don't have a spouse</label>
+                    
+                    <input type="checkbox" id="spouseUnemployed" name="spouseEmployment" value="Unemployed">
+                    <label for="spouseUnemployed">Unemployed</label>
+                    
+                    <input type="checkbox" id="spousePartTime" name="spouseEmployment" value="Employed part-time">
+                    <label for="spousePartTime">Employed part-time</label>
+                    
+                    <input type="checkbox" id="spouseFullTime" name="spouseEmployment" value="Employed full-time">
+                    <label for="spouseFullTime">Employed full-time</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="monthlyIncome">How much do you and your spouse (combined) earn from working on a monthly basis? (Please include gross wages, salaries, income from business, tips, etc.)</label>
+                <input type="number" id="monthlyIncome" name="monthlyIncome" class="small-input"> BDT/month
+            </div>
+
+            <div class="form-group">
+                <label for="children">How many children do you have who receive more than half of their support from you? (enter "0" if none)</label>
+                <input type="number" id="children" name="children" class="small-input">
+            </div>
+
+            <div class="form-group">
+                <label for="dependents">How many dependents (other than your children or spouse) live with you and receive more than half of their support from you? (enter "0" if none)</label>
+                <input type="number" id="dependents" name="dependents" class="small-input">
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Check eligibility</button>
+                <button type="reset">Cancel</button>
+            </div>
+            <div id="feedback" style="display:none;"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

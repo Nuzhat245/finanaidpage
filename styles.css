@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('mental.jpg'); /* Use your provided background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgb(230, 237, 240); /* Semi-transparent white background */
+  padding: 30px 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  backdrop-filter: blur(20px); /* Blur effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Spacing between form groups */
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  color: #555;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row; /* Arrange checkboxes vertically */
+  gap: 5px; /* Space between checkboxes */
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.small-input {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin-right: 10px;
+}
+
+button[type="reset"] {
+  background-color: #788285;
+  color:white;
+}
